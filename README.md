@@ -1,13 +1,24 @@
-# PROJECT 1 FORMALISATION
+# PROJECT 1 Formalisation of Discrete Time Martingale Theory
 
-## GitHub configuration
+In this file we introduce discrete time martingales and formalise
+the Martingale Transform Theorem
 
-To set up your new GitHub repository, follow these steps:
+## Main results
+- `martingales`: a construction of a `martingales`, given a `filtration` and a `Measure`.
+- `martingaleransform` : the product of a  `previsible` process and an `adapted` process.
+- `martingaletransformtheorem`: the main transform theorem of martingales
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
+## Notation
 
-After following the steps above, you can remove this section from the README file.
+ - `Ω` : Sample Space.
+ - `ω` : Elements of Sample Space / Events
+ - `m`, `𝓕`: Measurable Spaces/ σ-algebras over `Ω`
+ - `X`, `H` : Processes on the measurable spaces `m` and `𝓕`,
+ usually martingales and previsible process respectively
+ - `μ` : Measure over `m` and `𝓕`,
+ usually refers to Expectation and Conditional Expectation
+
+## References
+* https://leansearch.net/?q=measure+theory
+* Mathlib4 GitHub
+* https://leanprover-community.github.io/blog/posts/basic-probability-in-mathlib/
